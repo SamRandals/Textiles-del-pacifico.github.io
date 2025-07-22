@@ -8,9 +8,9 @@ function SobreNosotros(){
     window.open("https://www.instagram.com/textilesdelpacifico_oficial", "_blank");
     }
 
-    const abrirWhatsapp=()=>[
+    const abrirWhatsapp=()=>{
         window.open("https://wa.me/573194499777", "_blank")
-    ]
+    }
     return(
       <>
         <section className="AboutUs">

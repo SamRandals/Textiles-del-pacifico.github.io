@@ -1,0 +1,81 @@
+
+
+.catalogo__grid-items{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px,1fr));
+    
+    gap: 10px;
+    padding: 10px;
+    color: #222;
+}
+@media screen and (min-width:1550px){
+    .catalogo__grid-items{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (min-width:1450px){
+    .catalogo__grid-items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width:700px){
+    .catalogo__grid-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:450px){
+    .catalogo__grid-items{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        grid: 0;
+    }
+}
+.catalogo__item-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 450px;
+    max-height: 550px;
+    box-shadow: 10px 5px 10px #d3d3d3;
+}
+.catalogo__image-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.catalogo__image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.catalogo__desc-container{
+    display: flex;
+    padding: 10px;
+
+}
+
+/* botones de las tarjetas */
+.buttons__catalogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.buttons__catalogo button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #1e5799;
+    transition: background-color .5s ease-in, color .5s ease-in, translate .3s ease-in-out, transform .7s ease-out;
+}
+.button__buy:hover{
+    transform:scale(1.2);
+    background-color: #893862;
+    color: #fff;
+}

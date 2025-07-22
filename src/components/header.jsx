@@ -1,7 +1,30 @@
 
 import '../styles/header.css'
 import { Search } from 'lucide-react'
-function Header(){
+
+function Header({ cambiarSeccion }){
+
+
+function searchInput({buscarSeccion}) {
+  const searchButton = document.querySelector(".header__search");
+  const searchContainer = document.querySelector(".search__container");
+
+  searchButton.addEventListener("click", () => {
+    // Verifica si ya existe un input dentro del contenedor
+    if (!searchContainer.querySelector("input")) {
+      const input = document.createElement("input");
+      input.type = "text";
+      input.placeholder = "Buscar...";
+      input.classList.add("search__input");
+      searchContainer.appendChild(input);
+    }
+    
+  });
+}
+
+
+
+
   return(
 
       <>
@@ -22,16 +45,16 @@ function Header(){
       <input type="checkbox" name="" id="drop__menu"/>
 
       <div className="nav__buttons">
-        <button>Inicio</button>
-        <button>ShowRooms</button>
-        <button>Nosotros</button>
-        <button>Catalogo</button>
-        <button>Carta de Colores</button>
+        <button onClick={()=>cambiarSeccion("Inicio")}> Inicio</button>
+        <button onClick={()=>cambiarSeccion("ShowRooms")}>ShowRooms</button>
+        <button onClick={()=>cambiarSeccion("SobreNosotros")}>Nosotros</button>
+        <button onClick={()=>cambiarSeccion("Catalogo")}>Catalogo</button>
+        <button onClick={()=>cambiarSeccion("CardColors")}>Carta de Colores</button>
         <button>Servicios</button>
-        <button>Contactos</button>
+        <button onClick={()=>cambiarSeccion("Contactos")}>Contactos</button>
       </div>
     <div className="search__container">
-    <Search color="#fff" className='header__search'></Search>
+    <Search color="#fff" className='header__search' onClick={searchInput}></Search>
     </div>
     </div>
 

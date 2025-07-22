@@ -1,0 +1,115 @@
+
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.form__container{
+    border: 1px solid #234284;
+    border-left: 3px solid #234284;
+    border-radius: 10px;
+    padding: 10px;
+}
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    width: 50dvw;
+    
+}
+.form__contact h2{
+    text-align: center;
+    color: #234284;
+    font-size: 40px;
+    padding: 0;
+    margin: 10px;
+}
+.form__contact input, textarea{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #234284;
+    border-left: 2px solid #234284;
+    border-radius: 10px;
+}
+.form__contact textarea{
+   resize: none;
+   height: 90px;
+   color: #234284;
+}
+.form__contact textarea:focus{
+   outline:4px solid  #0490C9; 
+   border: none; 
+}
+.form__contact input:focus{
+    outline:4px solid  #0490C9;
+    border: none;
+}
+.form__contact label{
+    margin: 10px 5px;
+    font-size: 20px;
+    color: #234284;
+}
+.send__info{
+    padding: 10px;
+    width: 15%;
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto 10px auto;
+    border-bottom: 1px solid #234284;
+    border-left:1px solid #234284;
+    color: #234284;
+    transition: border .5s ease-in, background-color .5s ease-in-out;
+}
+.send__info:is(:hover,:active){
+    border-color: #234284;
+    background-color: #234284;
+    color: #fff;
+
+}
+
+
+/* div padding 
+.*/
+.more__contacts-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+    
+
+}
+/* logo colors */
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  font-size: 30px; /* Tamaño del ícono */
+  border: 2px solid white;
+  margin: 10px;
+}
+
+/* Gmail Gradient */
+.gmail-gradient {
+  background-image: linear-gradient(135deg, #d93025, #f9ab00, #34a853, #4285f4);
+}
+
+/* Instagram Gradient */
+.instagram-gradient {
+  background-image: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+/* WhatsApp Color */
+.whatsapp-solid {
+  background-color: #25D366;
+}
+
+/* Facebook Color */
+.facebook-solid {
+  background-color: #1877F2;
+}

@@ -7,17 +7,21 @@ body{
 body{
   --text-color:#222;
   --main-color:#0E94D4;
-  --border-color:#893862;
+  --border-color:#before;
   --darkness-color:#234284;
 }
 
 /* Main apartado */
 .main{
   display: flex;
-  
   align-items: center;
-  height: auto;
+  height: 60dvh;
   overflow: hidden;
+}
+.div__linea-para-hacer-un-corte-lol{
+  width: 100%;
+  background-color: var(--darkness-color);
+  height: 80px;
 }
 .titleAndPresentation{
   display: flex;
@@ -80,14 +84,7 @@ body{
   color: var(--darkness-color);
   font-size: 30px;
 }
-.information h1::before{
-  content: "";
-  display: flex;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 15px;
-  background-color:var(--darkness-color);
-}
+
 .information h1::after{
   content: "";
   display: block;
@@ -121,7 +118,7 @@ body{
   display: flex;
   margin: 0px auto 0px auto;
   width: 50%;
-  height: 350px;
+  height: 500px;
 }
 
 
@@ -137,7 +134,7 @@ body{
   font-size: 30px;
 }
 .item__grid-card{
-  border-left: 1px solid var(--darkness-color);
+  border-left: 4px solid var(--darkness-color);
   border-bottom: 1px solid var(--darkness-color);
   border-radius: 10px;
   

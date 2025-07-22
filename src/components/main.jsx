@@ -18,6 +18,7 @@ function Main(){
                     </div>
                 </div>
             </div>
+            <div className="div__linea-para-hacer-un-corte-lol"></div>
         </>
 
     )
