@@ -2,7 +2,7 @@
   "name": "textiles-del-pacifico",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://samrandals.github.io/Textiles-del-pacifico.github.io",
+  "homepage": "https://samrandals.github.io/Textiles-del-pacifico.github.io\",
   "type": "module",
   "scripts": {
     "dev": "vite",
