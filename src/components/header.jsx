@@ -1,29 +1,37 @@
 
 import '../styles/header.css'
+import { useState } from 'react'
 import { Search } from 'lucide-react'
 
 function Header({ cambiarSeccion }){
 
+  
 
-function searchInput({buscarSeccion}) {
-  const searchButton = document.querySelector(".header__search");
-  const searchContainer = document.querySelector(".search__container");
+  const [mostrarInput, setMostrarInput] = useState(false)
+  const [busqueda, setBusqueda] = useState("")
 
-  searchButton.addEventListener("click", () => {
-    // Verifica si ya existe un input dentro del contenedor
-    if (!searchContainer.querySelector("input")) {
-      const input = document.createElement("input");
-      input.type = "text";
-      input.placeholder = "Buscar...";
-      input.classList.add("search__input");
-      searchContainer.appendChild(input);
+  const manejarBusqueda = (e) => {
+    if (e.key === "Enter") {
+      const termino = busqueda.toLowerCase()
+
+      if (termino.includes("contacto")) {
+        cambiarSeccion("Contactos")
+      } else if (termino.includes("catalogo")) {
+        cambiarSeccion("Catalogo")
+      } else if (termino.includes("inicio")) {
+        cambiarSeccion("Inicio")
+      } else if (termino.includes("nosotros")) {
+        cambiarSeccion("SobreNosotros")
+      } else if (termino.includes("color")) {
+        cambiarSeccion("CardColors")
+      }else if (termino.includes("show")){
+        cambiarSeccion("ShowRooms")
+      }
+
+      setBusqueda("")
+      setMostrarInput(false)
     }
-    
-  });
-}
-
-
-
+  }
 
   return(
 
@@ -54,7 +62,17 @@ function searchInput({buscarSeccion}) {
         <button onClick={()=>cambiarSeccion("Contactos")}>Contactos</button>
       </div>
     <div className="search__container">
-    <Search color="#fff" className='header__search' onClick={searchInput}></Search>
+    <Search color="#fff" className='header__search' onClick={() => setMostrarInput(!mostrarInput)}></Search>
+     {mostrarInput && (
+          <input
+            type="text"
+            placeholder="Buscar..."
+            className="search__input"
+            value={busqueda}
+            onChange={(e) => setBusqueda(e.target.value)}
+            onKeyDown={manejarBusqueda}
+          />
+        )}
     </div>
     </div>
 

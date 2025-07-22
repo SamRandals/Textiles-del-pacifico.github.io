@@ -1,0 +1,27 @@
+
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: linear-gradient(to right, #0f73c4 0%,#66209b 28%,#66209b 32%,#66209b 42%,#d24b5a 76%,#d24b5a 76%,#d24b5a 83%,#d24b5a 83%); 
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:700px){
+    .footer__container p{
+        font-size: 14px;
+    }
+}
+.footer__info-container{
+    text-wrap: wrap;
+    width: 50%;
+    padding: 5px;
+}
+.footer__copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}

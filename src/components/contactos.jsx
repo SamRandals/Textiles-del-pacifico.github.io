@@ -53,6 +53,11 @@ ${name} ${lastname}`);
   window.open(gmailLink, "_blank"); // ✅ abre Gmail en nueva pestaña
 };
 
+const mapPacifico = ()=>{
+  let direccion = `https://www.google.com/maps/place/Textiles+Del+Pacifico/@3.4890138,-76.4822497,16.25z/data=!4m6!3m5!1s0x8e30a9eb5450107d:0x431da5748e088dd9!8m2!3d3.4893357!4d-76.4815216!16s%2Fg%2F11f7r0b_9n?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D`
+
+  window.open(direccion, '__blank')
+}
   
 
 return(<>
@@ -91,7 +96,7 @@ return(<>
         <SiFacebook onClick={facebook} />
       </div>
     </div>
-
+  <img src="https://textilesdelpacifico.co/wp-content/uploads/2024/11/TEXI.jpeg" alt="" className="map__image" onClick={mapPacifico}/>
 </div>
 
 

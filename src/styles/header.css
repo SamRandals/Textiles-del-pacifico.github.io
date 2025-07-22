@@ -114,3 +114,19 @@ body{
         
     }
 }
+
+
+.search__container{
+    display: flex;
+    align-items: center;
+}
+.header__search{
+    margin: 0px 5px 0px 5px;
+}
+
+.search__input{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: var(--darkness-color);
+    width: 50%;
+}
