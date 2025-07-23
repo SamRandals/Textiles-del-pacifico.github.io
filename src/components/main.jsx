@@ -14,7 +14,8 @@ function Main(){
                 </div>
                 <div className="textil__image-container">
                     <div className="cube__form">
-                        <img src="/images/maquina_image.jpg" alt="" />
+                        <img src="/textiles-del-pacifico.gitpage/images/maquina_image.jpg" alt="imagen de una maquina textil" />
+
                     </div>
                 </div>
             </div>
