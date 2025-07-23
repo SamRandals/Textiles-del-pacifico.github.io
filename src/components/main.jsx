@@ -14,7 +14,7 @@ function Main(){
                 </div>
                 <div className="textil__image-container">
                     <div className="cube__form">
-                        <img src="/images/maquina_image.jpg" alt="" />
+                        <img src={`${import.meta.env.BASE_URL}images/maquina_image.jpg`} alt="Logo" />
                     </div>
                 </div>
             </div>
