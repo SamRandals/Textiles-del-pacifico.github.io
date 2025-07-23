@@ -39,7 +39,8 @@ function Header({ cambiarSeccion }){
     
     <header className="header">
         <div className='logo__container'>
-          <img src="/images/logo_textiles_del_pacifico.jpg" alt="" />
+        <img src="/textiles-del-pacifico.gitpage/images/logo_textiles_del_pacifico.jpg" alt="" />
+
         </div>
         <div className="Title__main">
           <h2>La mejor calidad de tela - Algodón 10%
